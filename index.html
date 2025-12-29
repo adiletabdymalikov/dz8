@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style type="text/css">
+  #left{
+    width: 10%;
+    display: inline-block;
+    height: 100px;
+    background-color: red;
+  }
+  #right{
+    width: 10%;
+    display: inline-block;
+    height: 100px;
+    background-color: green;
+  }
+</style>
+<body onkeydown="move(e);">
+
+<button id="button">Начать анимацию</button>
+<button id="button2">Двигать в право</button>
+<button id="button3">Двигать в лево</button>
+<button id="button4">Двигать сверху</button>
+<button id="button5">Двигать снизу</button>
+<button id="button6">Вращать на 1440 градусов</button> 
+<input id="button7">Вращать на 0 градусов</input> 
+
+<div class="green" id="div" style="height:100px;width:100px;position:relative;"></div>
+<div id="left" onmouseover=""></div>
+<div id="right" onmouseover="r();"></div>
+
+<i class="fa-solid fa-balloon"></i>
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
